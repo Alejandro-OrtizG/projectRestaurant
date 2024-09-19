@@ -1,0 +1,153 @@
+:root{
+  --green: #00A149;
+  --white: #fff;
+  --red: #881014;
+  --dark: #000;
+  --titles:'arima madurai', cursive;
+  --text: 'mulish', sans-serif;
+}
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+/* globales */
+
+.contenedor{
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 95%;
+}
+
+h1, h2 {
+  font-family: var(--titles);
+  font-size: 30px;
+}
+
+h3, p, a{
+  font-family: var(--text);
+  font-size: 20px;
+}
+
+.green{
+  color: var(--green);
+}
+
+.red{
+  color: var(--red);
+}
+
+.white{
+  color: var(--white);
+}
+
+.ocultar{
+  display: none;
+}
+
+.btnClose{
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--white);
+  position: absolute;
+  top: 0;
+  right: 50px;
+  user-select: none;
+}
+
+.pantalla-completa{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.5);
+  z-index: 4;
+}
+
+.btnClose:hover{
+  cursor: pointer;
+}
+
+/* header */
+
+.contenerdor-navegacion{
+  background-color: var(--dark);
+  position: relative;
+  z-index: 5;
+}
+
+.contenido-navegacion{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h2, .navegacion a{
+  color: var(--white);
+}
+
+.navegacion a:nth-child(even):hover{
+  color: var(--red);
+}
+
+.navegacion a:nth-child(odd):hover{
+  color: var(--green);
+}
+
+.navegacion a:first-of-type{
+  margin-top: 5rem;
+}
+.navegacion a{
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.5rem;
+  display: block;
+  transition: color .3s ease-in-out;
+}
+
+.navegacion{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 40rem;
+  padding: 2rem 4rem;
+  background-color: var(--dark);
+}
+
+.hamburguesa span{
+  background-color: var(--white);
+  display: block;
+  width: 4rem;
+  height: .5rem;
+  margin-bottom: .5rem;  
+  justify-content: flex-start;
+}
+
+.ejemplo{
+  display:flex;
+  justify-content: space-around; /* separación de los items sobre el eje x*/
+  align-items: ; /* separación de los items sobre el otro eje y*/
+  flex-direction: column-reverse; /* dirección de los items filas o columnas o invertidas*/
+  flex-wrap: wrap; /* si los items se ajustan al contenedor o no */
+  flex-flow: ; /* dirección y ajuste de los items */
+  align-content: ; /* alineación de los items */
+  align-content: space-between; /* separación entre los items */
+  .child{
+    order: 1; /* orden de los items */
+  }
+  
+}
+
+flex-direction: 
