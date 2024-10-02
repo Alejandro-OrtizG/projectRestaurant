@@ -17,6 +17,7 @@ const buttonClose = () => {
   const overlay = document.createElement("div");
   overlay.classList.add("pantalla-completa");
   const body = document.querySelector("body");
+  if(document.querySelectorAll(".pantalla-completa").length > 0) return;
   body.appendChild(overlay);
   btnClose.textContent = "x";
   btnClose.classList.add("btnClose");
@@ -27,12 +28,14 @@ const buttonClose = () => {
 const closeMenu = (button, overlay) => {
   button.addEventListener('click', () => {
     navegacion.classList.add("ocultar");
-    overlay.remove();   
+    overlay.remove();  
+    boton.remove(); 
   });
 
   overlay.onclick = function(){
     overlay.remove();
     navegacion.classList.add("ocultar");
+    boton.remove();
   }
 }
 
