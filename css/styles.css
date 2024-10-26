@@ -1,6 +1,7 @@
 @import url('about_us.css');
 @import url('header.css');
 @import url('normalize.css');
+@import url('menu.css');
 
 :root{
   --green: #00A149;
@@ -57,4 +58,12 @@ img{
 
 .white{
   color: var(--white);
+}
+
+.btn-green{
+  background-color: var(--green);
+  border: none;
+  display: inline-block;
+  margin-bottom: 2rem;
+  font-family: var(--text)
 }

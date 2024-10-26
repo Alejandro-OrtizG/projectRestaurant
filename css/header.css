@@ -67,7 +67,7 @@
   background-color: var(--white);
 }
 
-.contenerdor-navegacion{
+.contenedor-navegacion{
   background-color: var(--dark);
   position: relative;
   z-index: 5;

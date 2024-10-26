@@ -1,0 +1,38 @@
+.menu{
+  padding-top: 4rem;
+}
+
+.texto-platillos{
+  text-align: center;
+  font-size: 5rem;
+}
+
+.botones-platillos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.botones-platillos button{
+  flex: 0 0 calc(50% - 1rem);
+  padding: 1rem 3rem;
+}
+
+@media(min-width: 768px){
+  .botones-platillos{
+    display: inline-block;
+  }
+  .botones-platillos button{
+    flex: unset;
+  }
+}
+
+.platillos{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.platillo{
+  flex: 0 0 calc(33.3% - 1rem);
+}
