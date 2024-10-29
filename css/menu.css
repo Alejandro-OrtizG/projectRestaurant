@@ -27,12 +27,44 @@
   }
 }
 
-.platillos{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+@media(min-width: 768px){
+  .platillos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .platillo{
   flex: 0 0 calc(33.3% - 1rem);
+  border: 1px solid #e1e1e1; ;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.platillo h2{
+  text-align: center;
+}
+
+.platillo p{
+  font-size: 1.8rem;
+}
+
+.precio{
+  display: flex;
+  justify-content: space-between;
+}
+
+.precio{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.precio button{
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--red);
+  color: var(--white); 
+  font-family: var(--text); 
 }

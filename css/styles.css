@@ -67,3 +67,8 @@ img{
   margin-bottom: 2rem;
   font-family: var(--text)
 }
+
+.btn-green:hover{
+  background-color: var(--red);
+  cursor: pointer;
+}
