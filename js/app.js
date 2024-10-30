@@ -47,7 +47,6 @@ imagenes.forEach(imagen => {
   observer.observe(imagen);
 });
 
-
 const closeMenu = (button, overlay) => {
   button.addEventListener('click', () => {
     navegacion.classList.add("ocultar");
