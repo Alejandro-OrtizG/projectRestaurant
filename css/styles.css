@@ -1,17 +1,10 @@
+@import url('variables.css');
 @import url('about_us.css');
 @import url('header.css');
 @import url('normalize.css');
 @import url('menu.css');
 @import url('divider_disign.css');
-
-:root{
-  --green: #00A149;
-  --white: #fff;
-  --red: #881014;
-  --dark: #000;
-  --titles:'arima madurai', cursive;
-  --text: 'mulish', sans-serif;
-}
+@import url('chef_section.css');
 
 html{
   box-sizing: border-box;
