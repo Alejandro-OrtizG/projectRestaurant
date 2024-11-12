@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Restaurant</title>
+  <script src="https://kit.fontawesome.com/650b8f722b.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -87,7 +88,7 @@
         <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
         <div class="precio">
           <p>$40.000</p>
-          <button>Comprar</button>
+          <button><i class="fa-solid fa-basket-shopping"></i></button>
         </div>
       </div>
       <div class="platillo" data-platillo="ensalada">
@@ -96,7 +97,7 @@
         <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
         <div class="precio">
           <p>$40.000</p>
-          <button>Comprar</button>
+          <button><i class="fa-solid fa-basket-shopping"></i></button>
         </div>
       </div>
       <div class="platillo" data-platillo="ensalada">
@@ -105,7 +106,7 @@
         <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
         <div class="precio">
           <p>$40.000</p>
-          <button>Comprar</button>
+          <button><i class="fa-solid fa-basket-shopping"></i></button>
         </div>
       </div>
       <div class="platillo" data-platillo="pasta">
@@ -114,7 +115,7 @@
         <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
         <div class="precio">
           <p>$40.000</p>
-          <button>Comprar</button>
+          <button><i class="fa-solid fa-basket-shopping"></i></button>
         </div>
       </div>
       <div class="platillo" data-platillo="pasta">
@@ -123,7 +124,7 @@
         <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
         <div class="precio">
           <p>$40.000</p>
-          <button>Comprar</button>
+          <button><i class="fa-solid fa-basket-shopping"></i></button>
         </div>
       </div>
       <div class="platillo" data-platillo="pasta">
@@ -132,7 +133,7 @@
         <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
         <div class="precio">
           <p>$40.000</p>
-          <button>Comprar</button>
+          <button><i class="fa-solid fa-basket-shopping"></i></button>
         </div>
       </div>
       <div class="platillo" data-platillo="pizza">
@@ -141,7 +142,7 @@
         <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
         <div class="precio">
           <p>$40.000</p>
-          <button>Comprar</button>
+          <button><i class="fa-solid fa-basket-shopping"></i></button>
         </div>
       </div>
       <div class="platillo" data-platillo="pizza">
@@ -150,7 +151,7 @@
         <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
         <div class="precio">
           <p>$40.000</p>
-          <button>Comprar</button>
+          <button><i class="fa-solid fa-basket-shopping"></i></button>
         </div>
       </div>
       <div class="platillo" data-platillo="postre">
@@ -159,7 +160,7 @@
         <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
         <div class="precio">
           <p>$40.000</p>
-          <button>Comprar</button>
+          <button><i class="fa-solid fa-basket-shopping"></i></button>
         </div>
       </div>
       <div class="platillo" data-platillo="postre">
@@ -168,7 +169,7 @@
         <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
         <div class="precio">
           <p>$40.000</p>
-          <button>Comprar</button>
+          <button><i class="fa-solid fa-basket-shopping"></i></button>
         </div>
       </div>
       <div class="platillo" data-platillo="postre">
@@ -177,7 +178,7 @@
         <p>Quinoa, cerezas, tomate, aceitunas, cereal.</p>
         <div class="precio">
           <p>$40.000</p>
-          <button>Comprar</button>
+          <button><i class="fa-solid fa-basket-shopping"></i></button>
         </div>
       </div>
     </div>
@@ -207,8 +208,50 @@
       </div>
     </div>
   </section>
-  < <script src="js/app.js">
-    </script>
+
+  <section class="formulario-contacto contenedor">
+
+    <div class="informacion-contacto">
+      <h3>Contáctanos</h3>
+      <p><i class="fa-solid fa-location-dot"></i>Bogotá D.C, Colombia.</p>
+      <p><i class="fa-solid fa-envelope"></i>ortiz.11.diego@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i>(+57)3143363516</p>
+      <div class="redes-sociales">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+    
+    <form class="formulario">
+      <div class="input-formulario">
+        <label for="nombre">Nombres</label>
+        <input type="text" placeholder="Pedro" id="nombre">
+      </div>
+      <div class="input-formulario">
+        <label for="apellidos">Apellido</label>
+        <input type="text" placeholder="Pedro" id="apellidos">
+      </div>
+      <div class="input-formulario">
+        <label for="correo">Correo</label>
+        <input type="email" placeholder="ejemplo@ejemplo.com" id="correo">
+      </div>
+      <div class="input-formulario">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" placeholder="+54 3100000000" id="telefono">
+      </div>
+      <div class="input-formulario">
+        <label for="mensaje">Mensaje</label>
+        <textarea></textarea>
+      </div>
+      <div class="btn-formulario">
+        <input type="submit" class="btn btn-green" value="Enviar">
+      </div>
+    </form>
+
+  </section>
+  <script src="js/app.js">
+  </script>
 </body>
 
 </html>

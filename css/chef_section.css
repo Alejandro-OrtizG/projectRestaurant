@@ -1,4 +1,4 @@
-.chef h2{
+.chef h2 {
   background-color: var(--red);
   display: inline-block;
   padding: 1rem 3rem;
@@ -6,19 +6,22 @@
   font-size: 4rem;
 }
 
-.contenido-chef{
-  display: flex; 
-  justify-content: space-between;
+@media(min-width: 768px) {
+  .contenido-chef {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+  }
 }
 
-.texto-chef, .imagen-chef{
+.texto-chef, .imagen-chef {
   flex: 0 0 calc(50% - 1rem);
 }
 
-.texto-chef h3{
+.texto-chef h3 {
   font-size: 3rem;
 }
 
-.texto-chef p{
+.texto-chef p {
   font-size: 2rem;
 }
